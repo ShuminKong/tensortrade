@@ -35,7 +35,6 @@ class SimulatedExchange(Exchange):
     def __init__(self, data_frame: pd.DataFrame = None, **kwargs):
         super().__init__(
             dtype=self.default('dtype', np.float32),
-            feature_pipeline=self.default('feature_pipeline', None),
             **kwargs
         )
 
